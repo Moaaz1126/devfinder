@@ -7,11 +7,14 @@
 body {
     background-color: var(--background);
     color: var(--textColor);
+    transition: 3s;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 * {
     padding: 0px;
     margin: 0px;
+    transition: 0.5s;
+    transition-property: color background;
 }
 nav {
     display: flex;
