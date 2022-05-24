@@ -1,0 +1,313 @@
+:root {
+    --background: #141c2f;
+    --textColor: white;
+    --eleColor: #1f2a48;
+    --numbersColor: #151c30;
+}
+body {
+    background-color: var(--background);
+    color: var(--textColor);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 120px;
+}
+nav h1 {
+    font-size: 18.5px;
+    font-weight: 200;
+    color: var(--textColor);
+}
+nav div {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+nav span {
+    font-size: 12px;
+    margin-right: 3px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+nav i {
+    font-size: 15px;
+}
+/* Search */
+#search {
+    background-color: var(--eleColor);
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    /* padding: 10px 0px 10px 0px; */
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    /* padding-left: 7px; */
+}
+#search input {
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    width: calc(87% - 60px);
+    color: white;
+    padding-left: 10px;
+    color: var(--textColor);
+}
+#search input:focus {
+    border: none;
+    outline: none;
+}
+#search i {
+    margin-left: 13px;
+    font-size: 12px;
+    /* font-weight: 100; */
+    opacity: 0.7;
+    color: var(--textColor);
+}
+#search button {
+    width: 60px;
+    height: 27px;
+    background-color: #0278fd;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+    font-weight: 100;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* float: right; */
+    position: absolute;
+    right: 5px;
+}
+
+/* App */
+
+#app {
+    width: 50%;
+    background-color: var(--eleColor);
+    box-sizing: border-box;
+    margin-top: 17px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+#app #about {
+    display: flex;
+    padding-top: 30px;
+}
+#app #about #left img {
+    width: 150px;
+    border-radius: 50%;
+}
+#app #about #left {
+    display: inline-block;
+    /* margin-top: 30px; */
+    margin-left: 30px;
+}
+#app #about #left {
+    display: inline-block;
+}
+
+#app #about #center {
+    margin-left: 17px;
+    margin-top: 3px;
+}
+#app #about #center #name {
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1.3px;
+    margin-bottom: 15px;
+    color: var(--textColor);
+}
+#app #about #center #id {
+    font-size: 8px;
+    letter-spacing: 0.7px;
+    color:#0278fd;
+    /* margin-top: 30px; */
+}
+#app #about #center #des {
+    font-size: 10px;
+    opacity: 0.8;
+    margin-top: 17px;
+    font-weight: 100;
+    width: 220px;
+    color: var(--textColor);
+}
+#app #about #right #join {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 50;
+    margin-left: 7px;
+    margin-left: -70px;
+    color: var(--textColor);
+}
+
+/* numbers */
+
+#numbers {
+    width: 66%;
+    background-color: var(--numbersColor);
+    border-radius: 3px;
+    position: relative;
+    left: 30%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+}
+#numbers div {
+    width: calc(100% / 3.6);
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    /* padding: 7px; */
+}
+#numbers div span {
+    letter-spacing: 1px;
+    font-size: 12px;
+    /* margin-bottom: 10px; */
+    font-weight: 100;
+    opacity: 0.8;
+    color: var(--textColor);
+}
+#numbers div p {
+    margin-top: 5px;
+    color: var(--textColor);
+}
+
+/* contact */
+#contact {
+    width: 66%;
+    border-radius: 3px;
+    position: relative;
+    left: 30%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#contact i {
+    font-size: 12.5px;
+    width: 15px;
+    color: var(--textColor);
+}
+#contact span {
+    font-size: 13px;
+    opacity: 0.8;
+    font-weight: 100;
+    margin-left: 5px;
+    color: var(--textColor);
+}
+#contact div {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 10px;
+}
+#search button:hover {
+    transition: 0.3s;
+    background-color: transparent;
+}
+#app #about #right #join {
+    margin-left: 0px;
+    position: absolute;
+    right: 15px;
+    opacity: 0.79;
+}
+#app #about #right {
+    position: absolute;
+    right: 0px;
+    width: 200px;
+}
+#app #about {
+    position: relative;
+}
+/* responcve */
+@media only screen and (max-width: 978px) {
+    #app {
+        width: 80%;
+    }
+    #search {
+        width: 80%;
+    }
+    nav {
+        width: 80%;
+    }
+    #contact {
+        width: 70%;
+        left: 27%;
+    }
+    #numbers {
+        width: 70%;
+        left: 27%;
+    }
+    #app #about #right #join {
+        margin-left: 0px;
+        position: absolute;
+        right: 15px;
+        opacity: 0.79;
+    }
+    #app #about #right {
+        position: absolute;
+        right: 0px;
+        width: 200px;
+    }
+    #app #about {
+        position: relative;
+    }
+}
+@media only screen and (max-width: 580px) {
+    #app {
+        width: 90%;
+    }
+    #search {
+        width: 90%;
+    }
+    nav {
+        width: 90%;
+    }
+    #contact {
+        width: 92%;
+        left: 4%;
+    }
+    #numbers {
+        width: 92%;
+        left: 4%;
+    }
+    #app #about #right #join {
+        font-size: 10px;
+        right: 7px;
+        top: -20px;
+    }
+    #app #about #left {
+        margin-left: 10px;
+        /* padding-left: 1px; */
+    }
+    #app #about #center #des {
+        width: 200px;
+        overflow: visible;
+    }
+}
+@media only screen and (max-width: 432px) {
+    #app #about #left img {
+        width: 100px;
+        margin-top: 20px;
+    }
+    #app #about #center #des {
+        margin-bottom: 5px;
+        width: 150px;
+    }
+}
